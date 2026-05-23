@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoloVeracruzEsBello</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles/stylesMainPage.css">
+    
+</head>
+<body>
+    <header>
+        <nav class="navigationBar">
+            <div class="logoPagina">
+                <img src="images/logoFondoCorrecto.png" height="67" width="67">
+                <span class="textoLogo">SoloVeracruzEsBello</span>
+            </div>
+            <div class="seccionesNavegacion">
+                <ul class="listaSecciones">
+                    <li><a href="#destinos">Destinos</a></li>
+                    <li><a href="#identidadPatrimonio">Identidad y Patrimonio</a></li>
+                    <li><a href="pages/blog.html">Blog</a></li>
+                    <li><a href="#guiaViajero">Guía del Viajero</a></li>
+                    <li><a href="#asistenciaViajero">Asistencia del Viajero</a></li>
+                    <li><a href="#footer">Contactanos</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section class="bienvenida">
+            <div class="contenidoBienvenida">
+                <h1>Vive Veracruz: <br><span>Tradición</span> en <br>Movimiento</h1>
+                <p>Descubre la magia, cultua y aventura del estado <br>más alegre de México a através de una mirada <br>contemporánea</p>
+                <button onclick="window.location.href='pages/blog.html'">Lee nuestro Blog <i class="bi bi-arrow-right"></i></button>
+            </div>
+        </section>
+        
+    </header>
+    <section class="destinos" id="destinos">
+            <div class="textoDestinos">
+                <p id="tituloDestinos">Escenarios Inolvidables</h1>
+                <p class="introduccionDestinos">Desde la brisa salada del Golfo hasta la neblina mística de la montaña, Veracruz <br>ofrece contrastes que cautivan el alma</p>
+            </div>
+            <div id="seccionTarjetasDestinos">
+                <div class="tarjeta" id="playa">
+                    <div class="imagenTarjeta">
+                        <img src="images/playa.png" alt="fotoPlaya">
+                    </div>
+                    <div class="textoTarjeta">
+                        <p class="tituloTarjeta">Playas del Golfo</p>
+                        <p>Aguas cálidas y arena fina donde el horizonte no <br>tiene fin.</p>
+                        <button class="botonTarjeta">
+                            Descubrir más <i class="bi bi-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="tarjeta" id="puebloMagico">
+                    <div class="imagenTarjeta">
+                        <img src="images/puebloMagico.png" alt="fotoPlaya">
+                    </div>
+                    <div class="textoTarjeta">
+                        <p class="tituloTarjeta">Pueblos Mágicos</p>
+                        <p>Caminos empedrados que guardan el aroma del <br>café y la historia colonial.</p>
+                        <button class="botonTarjeta">
+                            Descubrir más <i class="bi bi-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="tarjeta" id="selva">
+                    <div class="imagenTarjeta">
+                        <img src="images/selva.png" alt="fotoPlaya">
+                    </div>
+                    <div class="textoTarjeta">
+                        <p class="tituloTarjeta">Selva y Aventura</p>
+                        <p>El corazón verde de México donde la adrenalina se<br>encuentra con lo salvaje.</p>
+                        <button class="botonTarjeta">
+                            Descubrir más <i class="bi bi-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                    
+
+                    
+            </div>
+    </section>
+    <section class="identidadPatrimonio" id="identidadPatrimonio">
+        <div class="tituloIdentidadPatrimonio">
+            <p>Identidad y Patrimonio</p>
+        </div>
+        <div class="elementosIdentidad">
+            <div class="historia">
+                <p class="p1">HERENCIA Y RAÍCES</p>
+                <p class="p2">Cinco Siglos de <br><span>Historia Viva</span></p>
+                <p class="p3">Como la puerta de entrada de América, Veracruz custodia <br>tesoros que narran el encuentro entre dos mundos. El baluarte <br>que resistió en el tiempo.</p>
+                <button class="botonPatrimonio">
+                    Explora el Patrimonio <i class="bi bi-arrow-right"></i>
+                </button>
+            </div>
+            <div class="otrasSecciones">
+                <div class="gastronomia">
+                    <p class="p1">Sabores del puerto</p>
+                    <p class="p2">Gatronomía de Mar</p>
+                    <p class="p3">Del famoso 'Pescado a la Veracruzana' al café de altura. Un <br>festín que fusiona continentes.</p>
+                    <a href="#menu">EXPLORAR MENÚ</a>
+                </div>
+                <div class="seccionesInferiores">
+                    <div class="leyendas">
+                        <p class="p2">Leyendas Jarochas</p>
+                        <p class="p3">Mitos que cobran vida entre los callejones del <br>centro histórico.</p>
+                        <a href="#leyendas">Leer Relatos</a>
+                        <img src="images/calavera.png" class="imagenDecorativa">
+                    </div>
+                    <div class="tradiciones">
+                        <p class="p1">Tradiciones</p>
+                        <p class="p2">Danzantes de Papantla <br>y Zapateado Jarocho</p>
+                        <a href="#tradiciones">Descubrir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="guiaViajero" id="guiaViajero">
+        <div class="tituloGuiaViajero">
+            <p class="encabezadoGuia">Guía del Viajero</p>
+            <p class="infoGuia">Información esencial para que tu travesía por tierras jarochas sea perfecta de <br>principio a fin.</p>
+        </div>
+        <div class="tarjetasGuiaViajero">
+            <div class="tarjetaGuia">
+                <div class="iconoGuia">
+                    <i class="bi bi-calendar-event"></i>
+                </div>
+                <p class="p1">Mejor época</p>
+                <p class="p2">De noviembre a mayo <br>
+                    encontrarás el clima más fresco y <br>
+                    seco, ideal para explorar sin el <br>
+                    calor intenso del verano.
+                </p>
+            </div>
+            <div class="tarjetaGuia">
+                <div class="iconoGuia">
+                    <i class="bi bi-car-front"></i>
+                </div>
+                <p class="p1">Cómo moverse</p>
+                <p class="p2">En el puerto, el transporte público <br>
+                    es eficiente. Para los Tuxtlas o la <br>
+                    montaña, recomendamos rentar <br>
+                    un auto o contratar guías.
+                </p>
+            </div>
+            <div class="tarjetaGuia">
+                <div class="iconoGuia">
+                    <i class="bi bi-backpack"></i>
+                </div>
+                <p class="p1">Qué empacar</p>
+                <p class="p2">Ropa de lino y algodón, protector <br>
+                    solar biodegradable y repelente. <br>
+                    Si vas a Xalapa o Coatepec, un <br>
+                    suéter ligero es vital.
+                </p>
+            </div>
+            <div class="tarjetaGuia">
+                <div class="iconoGuia">
+                    <i class="bi bi-camera"></i>
+                </div>
+                <p class="p1">Costumbres</p>
+                <p class="p2">La propina estándar es del 10- <br>
+                    15%. Los jarochos son <br>
+                    sumamente amables; no dudes <br>
+                    en pedir direcciones o <br>
+                    recomendaciones.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="asistenciaViajero" id="asistenciaViajero">
+        <div class="columnaAsistencia">
+            <div class="encabezadoAsistencia">
+                <div class="iconoAsistencia">
+                    <i class="bi bi-question-circle"></i>
+                </div>
+                <div class="infoEncabezadoAsistencia">
+                    <p class="tituloencabezadoAsistencia">
+                        Asistencia al <br>Viajero
+                    </p>
+                    <p class="serviciosTexto">
+                        SERVICIOS DE EMERGENCIA <br> 24/7
+                    </p>
+                </div>
+            </div>
+            <p class="infoNumerosAsistencia">
+                Información de contacto vital para su <br>
+                seguridad y tranquilidad durante su visita a <br>
+                Veracruz. Recomendamos guardar estos <br>
+                números en sus contactos.
+            </p>
+            <div class="telefonoPrincipal">
+                <i class="bi bi-telephone"></i>
+                <p>Central de Emergencias: <br>911</p>
+            </div>
+            
+        </div>
+        <div class="numeros">
+
+            <div class="tarjetaNumero">
+                <i class="bi bi-shield-check"></i>
+            
+                <div>
+                    <p class="tituloNumero">POLICÍA TURÍSTICA</p>
+                    <p class="telefonoNumero">911</p>
+                </div>
+            </div>
+        
+            <div class="tarjetaNumero">
+                <i class="bi bi-shield"></i>
+            
+                <div>
+                    <p class="tituloNumero">PROTECCIÓN CIVIL</p>
+                    <p class="telefonoNumero">229 200 2270</p>
+                </div>
+            </div>
+        
+            <div class="tarjetaNumero">
+                <i class="bi bi-fire"></i>
+            
+                <div>
+                    <p class="tituloNumero">BOMBEROS</p>
+                    <p class="telefonoNumero">229 932 3600</p>
+                </div>
+            </div>
+        
+            <div class="tarjetaNumero">
+                <i class="bi bi-hospital"></i>
+            
+                <div>
+                    <p class="tituloNumero">CRUZ ROJA</p>
+                    <p class="telefonoNumero">229 923 4405</p>
+                </div>
+            </div>
+        
+            <div class="tarjetaNumero">
+                <i class="bi bi-car-front-fill"></i>
+            
+                <div>
+                    <p class="tituloNumero">ÁNGELES VERDES</p>
+                    <p class="telefonoNumero">078</p>
+                </div>
+            </div>
+        
+            <div class="tarjetaNumero">
+                <i class="bi bi-sign-stop"></i>
+            
+                <div>
+                    <p class="tituloNumero">TRÁNSITO ESTATAL</p>
+                    <p class="telefonoNumero">229 937 6610</p>
+                </div>
+            </div>
+        
+            <div class="tarjetaNumero">
+                <i class="bi bi-heart-pulse"></i>
+            
+                <div>
+                    <p class="tituloNumero">AMBULANCIAS (SAMUV)</p>
+                    <p class="telefonoNumero">229 931 0113</p>
+                </div>
+            </div>
+        
+            <div class="tarjetaNumero">
+                <i class="bi bi-truck"></i>
+            
+                <div>
+                    <p class="tituloNumero">CFE (ELECTRICIDAD)</p>
+                    <p class="telefonoNumero">071</p>
+                </div>
+            </div>
+        
+            <div class="tarjetaNumero">
+                <i class="bi bi-droplet"></i>
+            
+                <div>
+                    <p class="tituloNumero">AGUA (GRUPO MAS)</p>
+                    <p class="telefonoNumero">229 454 6550</p>
+                </div>
+            </div>
+        
+            <div class="tarjetaNumero">
+                <i class="bi bi-bank"></i>
+            
+                <div>
+                    <p class="tituloNumero">FISCALÍA GENERAL</p>
+                    <p class="telefonoNumero">228 843 6000</p>
+                </div>
+            </div>
+        
+            <div class="tarjetaNumero">
+                <i class="bi bi-headset"></i>
+            
+                <div>
+                    <p class="tituloNumero">ATENCIÓN TURÍSTICA</p>
+                    <p class="telefonoNumero">800 201 7493</p>
+                </div>
+            </div>
+        
+            <div class="tarjetaNumero">
+                <i class="bi bi-shield-lock"></i>
+            
+                <div>
+                    <p class="tituloNumero">GUARDIA NACIONAL</p>
+                    <p class="telefonoNumero">088</p>
+                </div>
+            </div>
+        
+            <div class="tarjetaNumero">
+                <i class="bi bi-compass"></i>
+            
+                <div>
+                    <p class="tituloNumero">CAPITANÍA DE PUERTO</p>
+                    <p class="telefonoNumero">229 931 0352</p>
+                </div>
+            </div>
+        
+            <div class="tarjetaNumero">
+                <i class="bi bi-hospital-fill"></i>
+            
+                <div>
+                    <p class="tituloNumero">HOSPITAL DE ALTA ESP.</p>
+                    <p class="telefonoNumero">229 931 1011</p>
+                </div>
+            </div>
+        
+            <div class="tarjetaNumero">
+                <i class="bi bi-airplane"></i>
+            
+                <div>
+                    <p class="tituloNumero">AEROPUERTO (ASUR)</p>
+                    <p class="telefonoNumero">229 934 9008</p>
+                </div>
+            </div>
+        
+        </div>
+    </section>
+    <footer class="footer" id="footer">
+
+        <div class="contenidoFooter">
+
+            <div class="columnaFooter">
+                <p class="tituloFooter">SoloVeracruzEsBello</p>
+
+                <p class="textoFooter">
+                    SoloVeracruzEsBello.com es el portal editorial <br>
+                    dedicado a curar las experiencias más <br>
+                    auténticas del estado.
+                </p>
+                <div class="redesFooter">
+                    <i class="bi bi-globe"></i>
+                    <i class="bi bi-share"></i>
+                    <i class="bi bi-envelope"></i>
+                </div>
+            </div>
+
+            <div class="columnaFooter">
+                <p class="tituloFooter">Compañia</p>
+
+                <a href="">Acerca de Nosotros</a>
+            </div>
+
+            <div class="columnaFooter">
+                <p class="tituloFooter">Soporte</p>
+
+                <a href="">Contacto</a>
+                <a href="">Politica de Privacidad</a>
+                <a href="">Promoción</a>
+            </div>
+
+            <div class="columnaFooter">
+                <p class="tituloFooter">Blog</p>
+
+                <p class="textoNewsletter">
+                    Recibe notificaciónes sobre actualización en nuestro blog.
+                </p>
+
+                <div class="inputNewsletter">
+                    <input type="text" placeholder="Tu email">
+
+                    <button>
+                        <i class="bi bi-send-fill"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="parteInferiorFooter">
+
+            <p>
+                © 2026 Todos los derechos reservados para SoloVeracruzEsBello
+            </p>
+
+            <div class="idiomaFooter">
+                <p>MXN ($)</p>
+                <p>Español (MX)</p>
+            </div>
+
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>

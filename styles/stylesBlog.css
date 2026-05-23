@@ -1,0 +1,460 @@
+body{
+    margin: 0;
+}
+
+header{
+    margin: 0;
+    padding: 0;
+}
+
+.navigationBar{
+    width: 100%;
+    background-color: #F7F9FF;
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+}
+
+.logoPagina{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.textoLogo{
+    color: #001E40;
+    font-size: 2.2vw;
+    font-family: 'Liberation Serif', serif;
+    text-decoration: none;
+}
+.seccionesNavegacion{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.listaSecciones{
+    display: flex;
+    list-style: none;
+    gap: 2vw;
+    align-items: center;
+
+    margin: 0;
+}
+
+.listaSecciones a{
+    text-decoration: none;
+    color: #181C20;
+    font-size: 1.1vw;
+    white-space: nowrap;
+}
+
+.listaSecciones a:hover{
+    color: #001E40;
+    font-weight: bold;
+    border-bottom: 3px solid #8B5E3C;
+}
+
+.edicionDelMes{
+    background-image: linear-gradient(
+        rgba(0, 30, 64, 0.0),
+        rgba(0, 30, 64, 0.7)), 
+        url(../images/edicion.png);
+    margin: 3% 5% 5% 5%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 5% 5% 5% 5%;
+}
+
+.etiquetaEdicion{
+    color: white;
+    background-color: #460000;
+    width: fit-content;
+    padding: 2px 15px 2px 15px;
+    border-left: 5px solid #904D00;
+    border-radius: 5px;
+}
+
+.tituloEdicion{
+    color: white;
+    font-family: 'Noto Serif', serif;
+    font-weight: bold;
+    font-size: 4vw;
+    line-height: 1;
+}
+
+.descripcionEdicion{
+    color: #DFE3E8;
+}
+
+.actualizacionMensual{
+    color: white;
+    background-color: #FD8B00;
+    width: fit-content;
+    padding: 1%;
+    border-radius: 10px;
+    background: linear-gradient(to right, #904D00, #FD8B00);
+}
+
+.saludos{
+    background-color: #001E40;
+    margin: 0% 5% 5% 5%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 5%;
+}
+
+.carruselDeSaludos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.carruselDeSaludos button{
+    font-size: 2vw;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    width: fit-content;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.463);
+    transition: .3s;
+}
+
+.carruselDeSaludos button:hover{
+    background-color: rgba(255, 255, 255, 0.622);
+    color: white;
+}
+
+
+.etiquetaSaludos{
+    color: white;
+    background-color: #904D00;
+    font-size: 16px;
+    width: fit-content;
+    padding: 2px 15px;
+    border-radius: 3px;
+}
+
+.tituloSaludos{
+    color: white;
+    font-family: 'Noto Serif', serif;
+    font-style: italic;
+    font-size: 3vw;
+}
+
+.descripcionSaludos{
+    color: white;
+    font-weight: 100;
+    margin-bottom: 3%;
+}
+
+
+.encabezadoTarjetaSaludo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    
+}
+
+.imagenTarjetaSaludo {
+    width: 60%;
+    aspect-ratio: 1/1;
+    flex-shrink: 0;
+}
+.imagenTarjetaSaludo img{
+    border-radius: 50%;
+    border: 5px solid #FD8B00;
+    width: 100%;
+    aspect-ratio: 1/1;
+    margin: none;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.infoPersonaSaludo{
+    font-family: 'Noto Serif', serif;
+    color: #FFB77D;
+    font-size: 25px;
+}
+
+.dedicatoria{
+    color: #DFE3E8;
+    font-size: 16px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;  
+    -webkit-box-orient: vertical;
+    text-align: justify;
+}
+
+.solicitud{
+    color: #FD8B00;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.carruselDeSaludos{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+
+.viewportCarusel{
+    width: 100%;
+    overflow: hidden;
+}
+
+.trackCarrusel{
+    display: flex;
+    gap: 1vw;
+    transition: transform .5s ease;
+}
+
+.tarjetaSaludo{
+    background-color: #30485C;
+    width: calc((100% - 2vw) / 3);
+    aspect-ratio: 1/1;
+    padding: 1.5rem;
+    border-radius: 20px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    overflow: hidden;
+
+    display: flex;                    /* agrega esto */
+    flex-direction: column;           /* agrega esto */
+    justify-content: flex-end;
+}
+
+.contenidoPricipal{
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+}
+
+
+.noticias{
+    background-color: rgb(183, 22, 22);
+    margin: 0 5% 5% 5%;
+    display: flex;
+    flex-direction: row;
+    padding: 0 5% 5% 5%;
+    width: calc((100% - 2%) * (2/3));
+}
+
+.tituloNoticias{
+    font-family: 'Noto Serif', serif;
+    color: #001E40;
+    font-size: 3vw;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.barraLateral{
+    background-color: #3a4000;
+    width: calc((100% - 2%) * (1/3));
+    display: flex;
+    flex-direction: column;
+    padding: 0 5% 5% 5%;
+}
+
+.contenedorEfemeride{
+    background-color: #EBEEF4;
+    border-top: 5px solid #904D00;
+    border-radius: 20px;
+    padding: 5%;
+}
+
+.encabezadoEfemeride{
+    font-family: 'Noto Serif', serif;
+    color: #001E40;
+    font-size: 1.5vw;
+    font-weight: bold;
+    line-height: 2;
+}
+
+.encabezadoEfemeride i{
+    color: #904D00;
+}
+
+.fechaEfemeride{
+    color: #904D00;
+    font-weight: bold;
+    font-size: 2vw;
+    line-height: 0;
+}
+
+.textoEfemeride{
+    color: #181C20;
+    overflow: hidden;
+    line-clamp: 3;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.325);
+    padding-bottom: 5%;
+}
+
+.proxima{
+    color: rgba(144, 77, 0, .7) ;
+    font-weight: bold;
+    line-height: 1;
+    font-size: 1.3vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    background-color: #001E40;
+    padding-top: 4%;
+}
+
+.contenidoFooter{
+    display: flex;
+    justify-content: space-between;
+
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 4%;
+}
+
+.columnaFooter{
+    display: flex;
+    flex-direction: column;
+}
+
+.tituloFooter{
+    color: #FD8B00;
+    font-family: 'Noto Serif', serif;
+    font-size: 1.6vw;
+}
+
+.textoFooter{
+    color: #B8C7E0;
+    line-height: 1.8;
+}
+
+.redesFooter{
+    display: flex;
+    gap: 20px;
+
+    margin-top: 5%;
+}
+
+.redesFooter i{
+    color: #FD8B00;
+    font-size: 1.4vw;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.redesFooter i:hover{
+    transform: translateY(-3px);
+}
+
+.columnaFooter a{
+    text-decoration: none;
+    color: #B8C7E0;
+
+    margin-bottom: 10%;
+
+    transition: 0.3s ease;
+}
+
+.columnaFooter a:hover{
+    color: #FFFFFF;
+}
+
+.textoNewsletter{
+    color: #B8C7E0;
+}
+
+.inputNewsletter{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.inputNewsletter input{
+    background-color: rgba(255,255,255,0.1);
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    border-radius: 8px;
+
+    padding: 12px;
+
+    color: white;
+
+    width: 16vw;
+}
+
+.inputNewsletter input::placeholder{
+    color: #8FA6C9;
+}
+
+.inputNewsletter button{
+    background-color: #FD8B00;
+
+    border: none;
+
+    width: 45px;
+    height: 45px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.inputNewsletter button:hover{
+    transform: translateY(-3px);
+}
+
+.inputNewsletter button i{
+    color: #001E40;
+}
+
+.parteInferiorFooter{
+    border-top: 1px solid rgba(255,255,255,0.1);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1.5% 4%;
+}
+
+.parteInferiorFooter p{
+    color: #7E93B3;
+}
+
+.idiomaFooter{
+    display: flex;
+    gap: 30px;
+}
