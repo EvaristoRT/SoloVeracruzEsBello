@@ -235,20 +235,19 @@ header{
     justify-content: flex-end;
 }
 
-.contenidoPricipal{
+.contenidoPrincipal{
     display: flex;
     flex-direction: row;
-    gap: 2%;
+    align-items: flex-start;
 }
 
 
 .noticias{
-    background-color: rgb(183, 22, 22);
-    margin: 0 5% 5% 5%;
+    margin: 0 0 5% 5%;
     display: flex;
-    flex-direction: row;
-    padding: 0 5% 5% 5%;
-    width: calc((100% - 2%) * (2/3));
+    flex-direction: column;
+    padding: 0 0 5% 5%;
+    flex: 2;
 }
 
 .tituloNoticias{
@@ -260,10 +259,70 @@ header{
     flex-direction: column;
 }
 
+.tarjetaNoticia{
+    width: 100%;
+    border-left: 5px solid #460000;
+    border-radius: 20px;
+    background-color: #F1F4FA;
+
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+
+    align-items: stretch; /* clave para que ambos lados midan igual en altura */
+    padding: 2%;
+    box-sizing: border-box;
+    margin-bottom: 5%;
+}
+
+.imagenNoticia{
+    flex: 1;              /* 50% */
+    overflow: hidden;
+    border-radius: 12px;
+    min-height: 120px;    /* evita que colapse */
+}
+
+.imagenNoticia img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.contenidoDeNoticia{
+    flex: 1;              /* 50% */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tituloTarjetaNoticia{
+    color: #001E40;
+    font-family: 'Noto Serif', serif;
+    font-weight: bold;
+    font-size: 2vw;
+    line-height: 1;
+}
+
+.descripcionNoticia{
+    font-size: 1vw;
+    text-align: justify;
+    line-height: 1;
+}
+
+.contenidoDeNoticia a{
+    color: #001E40;
+    font-weight: bold;
+}
+
+.contenidoDeNoticia a:hover{
+    color: #001e4098;
+    font-weight: bold;
+}
 
 .barraLateral{
-    background-color: #3a4000;
-    width: calc((100% - 2%) * (1/3));
+    
+    flex: 1;
     display: flex;
     flex-direction: column;
     padding: 0 5% 5% 5%;
@@ -274,6 +333,7 @@ header{
     border-top: 5px solid #904D00;
     border-radius: 20px;
     padding: 5%;
+    margin-bottom: 5%;
 }
 
 .encabezadoEfemeride{
@@ -310,11 +370,131 @@ header{
     font-size: 1.3vw;
 }
 
+.eventos{
+    background-color: #001E40;
+    border-radius: 20px;
+    padding: 5%;
+    margin-bottom: 5%;
+}
+
+.encabezadoEventos{
+    color: #799DD6;
+    font-family: 'Noto Serif', serif;
+    font-weight: bold;
+    font-size: 1.5vw;
+}
+
+.proximosEventos{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.evento{
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    align-items: center;
+    width: 100%;
+}
+
+.fechaEvento{
+    background-color: rgba(255, 255, 255, .1);
+    text-align: center;
+    padding: 20px 25px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 1vw;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1/1;
+}
+
+.fechaEvento.activo{
+    background: linear-gradient(to right,#904D00,#FD8B00);
+    text-align: center;
+    padding: 0, 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 1vw;
+    color: white;
+}
+
+.nombreEvento{
+    color: white;
+    font-weight: bold;
+    line-height: 1;
+    margin: 0;
+    font-size: 1vw;
+}
+
+.ubicacionHoraEvento{
+    color: rgba(121, 157, 214, .7);
+    font-size: .8vw;
+}
 
 
+.proximosEventos::-webkit-scrollbar{
+    width: 8px;
+}
+
+.proximosEventos::-webkit-scrollbar-track{
+    background: rgba(255,255,255,0.05);
+    border-radius: 10px;
+}
+
+.proximosEventos::-webkit-scrollbar-thumb{
+    background: linear-gradient(#904D00, #FD8B00);
+    border-radius: 10px;
+}
+
+.proximosEventos::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(#FD8B00, #904D00);
+}
 
 
+.clima{
+    border-radius: 20px;
+    border-top: 5px solid #460000;
+    background-color: #F1F4FA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
 
+.encabezadoClima{
+    font-family: 'Noto Serif', serif;
+    font-weight: bold;
+    color: #001E40;
+    font-size: 1.5vw;
+}
+
+.encabezadoClima i{
+    color: #904D00;
+}
+
+.tablaClima td{
+    padding: 10px;
+    color: #001E40;
+}
+
+.tablaClima i{
+    margin-right: 8px;
+    font-size: 1.2em;
+    color: #904D00;
+}
+
+.tempMax{
+    color: #904D00;
+}
 
 
 

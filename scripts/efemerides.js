@@ -1,4 +1,4 @@
-const efemeridesJunio = [
+const efemerides = [
 
     {
         dia: 1,
