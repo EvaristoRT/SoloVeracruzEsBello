@@ -1,0 +1,93 @@
+.encabezadoDestinos{
+    background-image: url(../images/pueblosMagicosSeccion.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5%;
+}
+
+.etiquetaEncabezadoDestinos{
+    color: white;
+    background-color: #460000;
+    width: fit-content;
+    padding: 2px 15px 2px 15px;
+    border-left: 5px solid #904D00;
+    border-radius: 5px;
+}
+
+.tituloDestinos{
+    color: white;
+    font-family: 'Noto Serif', serif;
+    font-weight: bold;
+    font-size: 7vw;
+    line-height: 1;
+}
+
+.tituloDestinos span{
+    color: #FD8B00;
+}
+
+.descripcionDestinos{
+    color: #DFE3E8;
+    width: 40%;
+    line-height: 1.5;
+}
+
+.comienzoViaje{
+    color: white;
+    background-color: #FD8B00;
+    width: fit-content;
+    padding: 1%;
+    border-radius: 10px;
+    background: linear-gradient(to right, #904D00, #FD8B00);
+}
+
+.listaDestinos{
+    padding: 5%;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.contenedorTarjetas{
+    width: 100%;
+    gap: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tarjetaDestino{
+    width: calc((100% - 4%)/3);
+    border-radius: 20px;
+}
+
+.encabezadoTarjetaDestino{
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    padding: 5%;
+    border-radius: 20px;
+}
+
+.etiquetaTarjetaDestino{
+    background: linear-gradient(to right, rgba(255, 255, 255, 1),rgba(255, 255, 255, .8));
+    width: fit-content;
+    padding: 0 5%;
+}
+
+.tituloDescripcionTarjetaDestino{
+    color: #001E40;
+    font-family: 'Noto Serif', serif;
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+.textoTarjetaDestino{
+    color: #43474F;
+    font-size: 1vw;
+    text-align: left;
+}
