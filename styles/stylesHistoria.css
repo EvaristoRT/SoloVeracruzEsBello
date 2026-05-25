@@ -1,0 +1,419 @@
+.encabezadoHistoriaDeVeracruz {
+    background-image: linear-gradient(to bottom,#00000030 60%, white 100%), url(https://www.inah.gob.mx/images/fotodeldia/20241209_fotodia_SnJuanUlua.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.tituloHistoria{
+    font-family: 'Noto Serif', serif;
+    color: white;
+    font-size: 5vw;
+    line-height: 1;
+}
+
+.tituloHistoria span{
+    color: #FFDCC3;
+}
+
+.descripcionHistoria{
+    color: white;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.lineaDelTiempo{
+    width: 100%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tituloLineaDelTiempo{
+    color: #001E40;
+    font-family: 'Noto Serif', serif;
+    font-weight: bold;
+    font-size: 3vw;
+    display: inline-block;
+    position: relative;
+}
+
+.tituloLineaDelTiempo p::after{
+    content: "";
+    position: absolute;
+
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -8px;
+
+    width: 60%;
+    height: 5px;
+    background-color: #8B5A2B; /* café */
+    border-radius: 2px;
+}
+
+/* =========================
+LINEA DEL TIEMPO
+========================= */
+
+.lineaDelTiempo{
+    position: relative;
+
+    width: 100%;
+
+    padding: 120px 4%;
+
+    background-color: white;
+
+    box-sizing: border-box;
+}
+
+/* =========================
+ENCABEZADO
+========================= */
+
+.encabezadoTimeline{
+    text-align: center;
+
+    margin-bottom: 120px;
+}
+
+.subtituloTimeline{
+    color: #9b5b00;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+.encabezadoTimeline h2{
+    font-size: 4rem;
+
+    font-family: 'Noto Serif', serif;
+
+    color: #102542;
+
+    margin-top: 10px;
+}
+
+/* =========================
+CONTENEDOR
+========================= */
+
+.contenedorTimeline{
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 140px;
+}
+
+/* =========================
+LINEA CENTRAL
+========================= */
+
+.contenedorTimeline::before{
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    top: 0;
+
+    transform: translateX(-50%);
+
+    width: 2px;
+    height: 100%;
+
+    background-color: #D8DCE2;
+}
+
+/* =========================
+EVENTOS
+========================= */
+
+.eventoTimeline{
+    display: grid;
+
+    grid-template-columns: minmax(300px, 1fr) 120px minmax(300px, 1fr);
+
+    align-items: center;
+
+    gap: 100px;
+
+    position: relative;
+}
+
+/* =========================
+ALTERNAR
+========================= */
+
+.reverse .contenidoTimeline{
+    order: 3;
+
+    text-align: right;
+}
+
+.reverse .circuloTimeline{
+    order: 2;
+}
+
+.reverse .imagenTimeline{
+    order: 1;
+}
+
+/* =========================
+TEXTO
+========================= */
+
+.contenidoTimeline{
+    width: 100%;
+}
+
+.fechaTimeline{
+    color: #9b5b00;
+
+    font-weight: bold;
+
+    font-size: 1rem;
+
+    letter-spacing: 1px;
+}
+
+.contenidoTimeline h2{
+    font-size: 3rem;
+
+    color: #102542;
+
+    font-family: 'Noto Serif', serif;
+
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    line-height: 1.1;
+}
+
+.contenidoTimeline p{
+    color: #4F5D75;
+
+    line-height: 1.8;
+
+    font-size: 1.1rem;
+
+    max-width: 600px;
+}
+
+.reverse .contenidoTimeline p{
+    margin-left: auto;
+}
+
+/* =========================
+CIRCULO
+========================= */
+
+.circuloTimeline{
+    width: 70px;
+    height: 70px;
+
+    border-radius: 50%;
+
+    background-color: #6B0000;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-weight: bold;
+
+    font-size: 1.3rem;
+
+    flex-shrink: 0;
+
+    z-index: 2;
+
+    margin: auto;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* =========================
+IMAGEN
+========================= */
+
+.imagenTimeline{
+    width: 100%;
+}
+
+.imagenTimeline img{
+    width: 100%;
+
+    max-width: 700px;
+
+    display: block;
+
+    border-radius: 20px;
+
+    object-fit: cover;
+
+    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+}
+
+/* =========================
+RESPONSIVE
+========================= */
+
+@media(max-width: 1000px){
+
+    .contenedorTimeline::before{
+        left: 35px;
+    }
+
+    .eventoTimeline{
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 40px;
+
+        padding-left: 90px;
+    }
+
+    .reverse .contenidoTimeline,
+    .reverse .imagenTimeline,
+    .reverse .circuloTimeline{
+        order: initial;
+    }
+
+    .contenidoTimeline,
+    .imagenTimeline{
+        width: 100%;
+    }
+
+    .circuloTimeline{
+        position: absolute;
+
+        left: 0;
+        top: 0;
+
+        margin: 0;
+    }
+
+    .encabezadoTimeline h2{
+        font-size: 3rem;
+    }
+
+    .contenidoTimeline h2{
+        font-size: 2.2rem;
+    }
+
+    .reverse .contenidoTimeline{
+        text-align: left;
+    }
+
+    .reverse .contenidoTimeline p{
+        margin-left: 0;
+    }
+}
+
+.V4h{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F7F9FF;
+    padding: 5%;
+}
+.encabezado4h p{
+    color: #001E40;
+    font-family: 'Noto Serif', serif;
+    font-weight: bold;
+    font-size: 3vw;
+    display: inline-block;
+    position: relative;
+}
+
+.encabezado4h p::after{
+    content: "";
+    position: absolute;
+
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -8px;
+
+    width: 60%;
+    height: 5px;
+    background-color: #8B5A2B; /* café */
+    border-radius: 2px;
+}
+
+.tarjetas4h{
+    width: 100%;
+    gap: 2%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.Vh{
+    border-radius: 20px;
+    border-top: 5px solid #904D00;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    width: calc((100% - 6%)* 1 / 4);
+    text-align: center;
+    background-color: #EBEEF4;
+    padding: 2%;
+    gap: 2%;
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+.Vh i{
+    border-radius: 50%;
+    background-color: rgba(0, 30, 64, .1);
+    padding: 5%;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vw;
+}
+
+.anioH{
+    color: #904D00;
+    
+}
+
+.tituloH{
+    color: #001E40;
+    font-family: 'Noto Serif',serif;
+    line-height: 1;
+}
+
+.descripcionH{
+    font-size: 1vw;
+    font-weight: 400;
+    width: 80%;
+    line-height: 1;
+}
