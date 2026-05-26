@@ -1,0 +1,116 @@
+/* ─── ENCABEZADO ─────────────────────────────────────────── */
+
+.encabezadoLeyendasDeVeracruz {
+    background-image: linear-gradient(to bottom, rgba(0, 30, 64, .3), rgba(0, 30, 64, 1)),
+                      url(../images/leyendas.png);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contenidoEncabezadoLeyendas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tituloLeyendas {
+    font-family: 'Noto Serif', serif;
+    color: white;
+    font-size: 5vw;
+    line-height: 1;
+}
+
+.tituloLeyendas span {
+    color: #FFDCC3;
+}
+
+.descripcionLeyendas {
+    color: white;
+    width: 40%;
+    margin: 0 auto;
+}
+
+
+/* ─── SECCIÓN DE LEYENDAS ────────────────────────────────── */
+
+.listaLeyendas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #001E40;
+    padding: 5%;
+    width: 100%;
+    gap: 80px;          /* separación uniforme entre leyendas */
+}
+
+.contenedorLeyendas {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    gap: 5%;
+    width: 100%;
+    max-width: 1200px;  /* evita que se estire infinito en pantallas anchas */
+}
+
+
+/* ─── IMAGEN ─────────────────────────────────────────────── */
+
+.imagenLeyenda {
+    flex: 1;            /* ocupa la mitad del contenedor */
+    height: 80vh;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.imagenLeyenda img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* ─── TEXTO ──────────────────────────────────────────────── */
+
+.textoLeyenda {
+    flex: 1;            /* ocupa la otra mitad del contenedor */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.etiquetaLeyenda {
+    color: #FFDCC3;
+    font-weight: bold;
+    font-size: 1vw;
+    letter-spacing: 0.1em;
+    margin-bottom: 8px;
+}
+
+.tituloLeyenda {
+    font-family: 'Noto Serif', serif;
+    font-weight: bold;
+    font-size: 4vw;
+    color: white;
+    margin-bottom: 16px;
+    line-height: 1.1;
+}
+
+.descripcionLeyenda {
+    color: #DFE3E8;
+    width: 100%;        /* antes era 40%, lo que colapsaba el texto */
+    text-align: justify;
+    line-height: 1.7;
+}
+
+.descripcionLeyenda span {
+    color: #FFB77D;
+    font-style: italic;
+}
