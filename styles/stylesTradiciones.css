@@ -1,0 +1,126 @@
+.topTradiciones{
+    padding: 5%;
+    background-image: linear-gradient(to top, rgba(0, 30, 64,.6),rgba(0, 30, 64,.2)),url(../images/tradiciones.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.etiquetaTopTradiciones{
+    color: #FD8B00;
+}
+
+.tituloTopTradiciones{
+    font-family: 'Noto Serif', serif;
+    font-size: 6vw;
+    font-weight: bold;
+    width: 70%;
+    color: white;
+    line-height: 1;
+}
+
+.tituloTopTradiciones span{
+    font-style: italic;
+}
+
+.descripcionTopTradiciones{
+    color: white;
+    font-size: 1.5vw;
+    width: 50%;
+    line-height: 1;
+}
+
+.introduccionTradiciones{
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    min-height: 100vh;
+}
+
+.contenidoIntroduccion{
+    flex: 1;
+}
+
+
+.tituloIntroduccion{
+    font-weight: bold;
+    font-size: 3vw;
+    font-family: 'Noto Serif', serif;
+    margin-bottom: 5%;
+    color: #001E40;
+}
+
+.textoIntroduccion{
+    font-size: 1.5vw;
+    font-weight: 300;
+}
+
+.imagenIntroduccion{
+    flex: 1;
+    background-image: url(https://www.rtv.org.mx/masnoticias/wp-content/uploads/sites/13/2014/04/ARPAS-VERACRUZ.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    height: 60vh;
+}
+
+.listaTradiciones{
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+    repeat(auto-fit, minmax(300px, 1fr));
+
+    gap: 30px;
+
+    padding: 5rem;
+
+    box-sizing: border-box;
+}
+
+.tarjetaTradicion {
+    border-radius: 20px;
+    width: 100%; /* grid ya controla el ancho */
+    /* ❌ elimina height: 40% */
+    background-color: #F1F4FA;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.encabezadoTradicion{
+    height: 25vh;
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 5%;
+}
+
+.etiquetaTradicion{
+    background-color: #001E40;
+    border-radius: 50px;
+    width: fit-content;
+    padding: 0 2%;
+    color: white;
+}
+
+.cuerpoTradicion {
+    padding: 5%;
+    flex: 1; /* empuja hacia abajo si añades un botón al final */
+}
+
+.tituloTradicion{
+    color: #001E40;
+    font-family: 'Noto Serif', serif;
+    font-weight: bold;
+    font-size: 2vw;
+}

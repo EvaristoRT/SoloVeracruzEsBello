@@ -216,10 +216,14 @@
     width: 45vw;
     background-color: #d17301;
     border-radius: 20px;
-    background-image: linear-gradient(
+    /*background-image: linear-gradient(
         rgba(0, 30, 64, 0.0),
         rgba(0, 30, 64, 0.7)
     ),url(../images/gastronimia.png);
+    Imagen de la seccion para cuando se habilite
+    */
+    background-image: linear-gradient(rgba(0, 30, 64, 0.0),
+        rgba(0, 30, 64, 0.7)), url(../images/promocion.jpg);
     background-size: cover;
     background-position: center;
     text-align: left;
