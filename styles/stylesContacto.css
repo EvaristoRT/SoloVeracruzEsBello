@@ -1,0 +1,99 @@
+.introduccionContacto{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 5%;
+}
+
+.tituloIntroduccion{
+    color: #001E40;
+    font-family: 'Noto Serif', serif;
+    font-weight: bold;
+    font-size: 5vw;
+}
+
+.descripcionContacto{
+    color: #001E40;
+    width: 50%;
+}
+
+.formContacto{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 80px 0;
+}
+
+.contenedorFormulario{
+    width: 85%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.tituloFormulario{
+    font-size: 3rem;
+    color: #0B2340;
+    margin-bottom: 20px;
+}
+
+.informacionPersona{
+    display: flex;
+    gap: 25px;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.asunto,
+.mensaje{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #3D3D3D;
+}
+
+input,
+textarea{
+    width: 100%;
+    border: 1px solid #8B93A1;
+    border-radius: 12px;
+    padding: 18px;
+    font-size: 1rem;
+    outline: none;
+}
+
+textarea{
+    min-height: 220px;
+    resize: none;
+}
+
+.btnEnviar{
+    width: fit-content;
+    padding: 18px 35px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #A55A00, #F08A00);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.btnEnviar:hover{
+    transform: translateY(-2px);
+}
